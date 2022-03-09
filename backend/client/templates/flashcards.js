@@ -41,7 +41,7 @@ function resetAllCards() {
 
 function reviewCard(isCorrect) {
   $.ajax({
-    url : 'http://localhost:8000/api/review/',
+    url : 'http://ahalbert.com:8000/api/review/',
     type : 'POST',
     data : {"isCorrect" : isCorrect, "id" : currentCardId},
     dataType:'json',
@@ -57,7 +57,7 @@ function reviewCard(isCorrect) {
 
 function getNextCard() {
   $.ajax({
-    url : 'http://localhost:8000/api/next/',
+    url : 'http://ahalbert.com:8000/api/next/',
     type : 'GET',
     dataType:'json',
     'success' : function(data) {
